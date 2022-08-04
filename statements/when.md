@@ -22,7 +22,7 @@ when {
 Но тогда обязательно наличие ___else___.
 
 ```Kotlin
-a: Int = when {
+val a: Int = when {
 	a == 10 -> 10
 	a > 10 -> a * 2 + a * a
 	a < 10 -> a * 5 - a * a
