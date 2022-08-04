@@ -46,7 +46,8 @@ for (i in 3 until 12 step 3)
 	print(i + " ");
 ```
 ```
-3 6 9```
+3 6 9
+```
 
 ```Kotlin
 for (i in 10 downTo 5) {
