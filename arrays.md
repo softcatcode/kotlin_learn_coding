@@ -16,21 +16,21 @@ ___LinkedList___: список.
 ```Kotlin
 var a: Array<Int> = Array(10, {it * 2})
 for (el: Int in a)
-  print("${el} ")
+    print("${el} ")
 println()
 
 val n: Int = 5;
 var b: Array<Int> = Array(n, {it + 1})
 for (el: Int in b)
-  print("${el} ")
+    print("${el} ")
 println()
 
 var linlist: LinkedList<Int> = LinkedList<Int>().apply {
-  for (el in b)
-    add(el * el)
+    for (el in b)
+        add(el * el)
 }
 for (el: Int in linlist)
-  print("${el} ")
+    print("${el} ")
 
 ```
 ```
