@@ -1,3 +1,4 @@
+# Обычная функция
 ```Kotlin
 fun ordinary_gcd(a: Int, b: Int): Int
 {
@@ -12,14 +13,18 @@ fun ordinary_gcd(a: Int, b: Int): Int
     }
     return if (x == 0) y else x // lambda
 }
-
+```
+# Из одного оператора, через ```= when```
+```Kotlin
 fun gcdOfTwo(a: Int, b: Int): Int = when {
     a == 0 -> b
     b == 0 -> a
     a > b -> gcdOfTwo(a % b, b)
     else -> gcdOfTwo(b % a, a)
 }
-
+```
+# Функция как параметр
+```Kotlin
 fun apply(f: (Int, Int) -> Int, a: Array<Int>): Int?
 {
     if (a.size == 0)
@@ -31,7 +36,9 @@ fun apply(f: (Int, Int) -> Int, a: Array<Int>): Int?
         result = f(result, a[i])
     return result
 }
-
+```
+## Её использование
+```Kotlin
 fun gcd(vararg ints: Int): Int? = apply(::gcdOfTwo, ints.toTypedArray()) // lambda
 ```
 Сложные типы передаются по сылке, а простые - по значению.
