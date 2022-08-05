@@ -1,4 +1,4 @@
-# Оператор <span style="color:red">?</span>
+# Оператор ```?```
 ```Kotlin
 var a: String? = readLine()
 val x: Int? = a?.toInt()
@@ -6,7 +6,7 @@ val x: Int? = a?.toInt()
 1) Позволяет переменной данного типа принимать значение ___null___.<br>
 2) Напоминает читателю кода, что переменная может быть равна ___null___.
 
-# Оператор !!
+# Оператор ```!!```
 ```Kotlin
 var a: String? = readLine()
 val a_value: Int = a!!.toInt()
