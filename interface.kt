@@ -1,4 +1,3 @@
-```Kotlin
 import java.lang.Math.sin
 
 interface GeomShape
@@ -35,4 +34,3 @@ fun main()
     var paral = Parallelogram(1.0, 2.0, 3.14159265358979 / 6)
     print(paral.area())
 }
-```
