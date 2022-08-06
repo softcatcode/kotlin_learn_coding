@@ -14,7 +14,7 @@ class User
 
 fun main()
 {
-   var u: User = User()
+    var u: User = User()
     u.name = "John"
     u.age = 20U
     u.points += 100
@@ -46,7 +46,7 @@ class User(name: String, age: UInt)
 
 fun main()
 {
-   var u: User = User("John", 20U)
+    var u: User = User("John", 20U)
     u.points += 100
     u.show()
 }
@@ -73,7 +73,7 @@ class User(var name: String, var age: UInt)
 
 fun main()
 {
-   var u: User = User("John", 20U)
+    var u: User = User("John", 20U)
     u.points += 100
     u.show()
 }
