@@ -120,3 +120,8 @@ Kotlin: Platform declaration clash: The following declarations have the same JVM
     constructor User(name: String, age: UInt) defined in User
 ```
 
+
+Можно задать значения по умолчанию для полей класса:
+```Kotlin
+class User(var name: String = "Bob", var age: UInt = 40U)
+```
