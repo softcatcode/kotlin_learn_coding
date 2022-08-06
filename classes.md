@@ -125,3 +125,34 @@ Kotlin: Platform declaration clash: The following declarations have the same JVM
 ```Kotlin
 class User(var name: String = "Bob", var age: UInt = 40U)
 ```
+
+# getter и setter
+```Kotlin
+class User(var name: String, var age: UInt)
+{
+    var points: Long = 0
+        set (newVal: Long) {
+            if (newVal != 0L)
+                field = newVal
+            else
+                return
+        }
+        get() {
+            print("You fetched the points value.\n")
+            return field
+        }
+
+    fun get_score(): Long = points / age.toLong()
+    fun show() {
+        println("Player $name got score ${get_score()}.")
+    }
+}
+```
+___set___ срабатывает при присваивании полю класса какого-то значения.<br>
+_field_ - ссылка на поле, которому присваивается значение.<br>
+Формальный параметр только один, означает то, что присваивается полю _field_.<br>
+<br>
+___get___ срабатывает при обращении к полю класса.<br>
+_field_ - ссылка на поле, к которому обратились.<br>
+Не принимает никаких параметров.<br>
+Должен быть явный возврат значения (___return___).
