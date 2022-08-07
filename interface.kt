@@ -3,7 +3,10 @@ import java.lang.Math.sin
 interface GeomShape
 {
     // functions may be implemented in interface
-    fun print_properties(area: Double)
+    fun printProperties()
+    {
+        println("Properties:")
+    }
     fun area(): Double
 }
 
@@ -19,7 +22,8 @@ class Parallelogram(x: Double, y: Double, a: Double): GeomShape
         this.a = a
     }
 
-    override fun print_properties(area: Double) {
+    override fun printProperties() {
+        super.printProperties()
         println("Oposite sides are parallel.")
         println("Oposite angles are equal.")
         println("Oposite sides are equal")
@@ -33,5 +37,6 @@ class Parallelogram(x: Double, y: Double, a: Double): GeomShape
 fun main()
 {
     var paral = Parallelogram(1.0, 2.0, 3.14159265358979 / 6)
-    print(paral.area())
+    paral.printProperties()
+    print("Area is ${paral.area()}.")
 }
