@@ -59,7 +59,7 @@ open class Rectangle(x: Double, y: Double) : Parallelogram(x, y, pi / 2)
 
 fun main()
 {
-    var rect = Rectangle(1.0, 2.0)
+    var rect = Rectangle(1.5, 2.0)
     rect.printProperties()
     print("Area of this ${rect.name} is ${rect.area()}.")
 }
