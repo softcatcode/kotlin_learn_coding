@@ -2,6 +2,7 @@ import java.lang.Math.sin
 
 interface GeomShape
 {
+    // functions may be implemented in interface
     fun print_properties(area: Double)
     fun area(): Double
 }
