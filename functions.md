@@ -11,7 +11,7 @@ fun ordinary_gcd(a: Int, b: Int): Int
         if (y > x)
             y %= x
     }
-    return if (x == 0) y else x // lambda
+    return if (x == 0) y else x
 }
 ```
 # Из одного оператора, через ```= when```
@@ -39,6 +39,6 @@ fun apply(f: (Int, Int) -> Int, a: Array<Int>): Int?
 ```
 ## Её использование
 ```Kotlin
-fun gcd(vararg ints: Int): Int? = apply(::gcdOfTwo, ints.toTypedArray()) // lambda
+fun gcd(vararg ints: Int): Int? = apply(::gcdOfTwo, ints.toTypedArray())
 ```
 Сложные типы передаются по сылке, а простые - по значению.
