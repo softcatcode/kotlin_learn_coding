@@ -39,3 +39,17 @@ SoftFur: meow
 How 5 age cat meows:
 meow meow 
 ```
+
+
+Ещё пример:
+```Kotlin
+Person("Bob", 20).let {
+    if (it.id % 2 == 0)
+        print(it.getSettings())
+    else {
+        it.age += 10
+        it.job = "student"
+        print("${it.name}: ${it.job}, ${it.age}")
+    }
+}
+```
