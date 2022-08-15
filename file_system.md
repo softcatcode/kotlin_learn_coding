@@ -8,7 +8,7 @@ fstream.close() // close
 ## Чтение
 ```Kotlin
 val fstream: FileInputStream = this.openFileInput(fname) // open
-val str = fstream.readBytes().toString(Charset.UTF_8) // get data
+val str = fstream.readBytes().toString(Charsets.UTF_8) // get data
 fstream.close() // close
 ```
 # Работа с внешним хранилищем
