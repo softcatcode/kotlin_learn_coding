@@ -3,7 +3,7 @@
 ```Kotlin
 val builder: AlertDialog.Builder = AlertDialog.Builder(this)
 builder.setTitle("info")
-builder.setMessage("I should go away from the computer at 14:00")
+builder.setMessage("some text")
 builder.setNeutralButton("ok", ::infoDialogClickListener)
 builder.setNegativeButton("nb", ::infoDialogClickListener)
 builder.setPositiveButton("pb", ::infoDialogClickListener)
