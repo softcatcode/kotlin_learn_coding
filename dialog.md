@@ -51,9 +51,9 @@ builder.setMultiChoiceItems(R.array.multi_item, null) {
 ## Одиночный выбор
 ```Kotlin
 builder.setSingleChoiceItems(R.array.multi_item, 0) {
-            dialog, index ->
-            Log.i("codingeveryday", "$dialog: $index")
-        }
+    dialog, index ->
+    Log.i("codingeveryday", "$dialog: $index")
+}
 ```
 Второй параметр ___setSingleChoiceItems___ - индекс выбранного элемента.
 # Как менять расположение кнопок (stackoverflow)
@@ -63,18 +63,20 @@ alertDialog.setTitle("Title");
 alertDialog.setMessage("Message");
 
 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes",
-        new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
+    new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialog, int which) {
+            dialog.dismiss();
+        }
+    }
+);
 
 alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No",
-        new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                 dialog.dismiss();
-            }
-         });
+    new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialog, int which) {
+             dialog.dismiss();
+        }
+     }
+);
 alertDialog.show();
 
 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
