@@ -5,8 +5,8 @@ val builder: AlertDialog.Builder = AlertDialog.Builder(this)
 builder.setTitle("info")
 builder.setMessage("some text")
 builder.setNeutralButton("ok", ::infoDialogClickListener)
-builder.setNegativeButton("nb", ::infoDialogClickListener)
-builder.setPositiveButton("pb", ::infoDialogClickListener)
+builder.setNegativeButton("neg", ::infoDialogClickListener)
+builder.setPositiveButton("pos", ::infoDialogClickListener)
 builder.show()
 ```
 ## Обработка нажатия на кнопки
