@@ -18,7 +18,10 @@ val itemTouchHelper = ItemTouchHelper(callback)
 itemTouchHelper.attachToRecyclerView(recyclerView)
 ```
 __ItemTouchHelper.SimpleCallback__ - объект, следящий за изменением позиции пальца, скользящего по экрану и знает, что нужно делать: содердит<br>
-все необходимые для этого методы.
+все необходимые для этого методы.<br>
+Первый аргумент - направления перетаскивания.<br>
+Второй - Направления swipe.
+
 
 ___ItemTouchHelper___ реализует обработку swipe.
 
