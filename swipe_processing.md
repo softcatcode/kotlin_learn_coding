@@ -11,7 +11,7 @@ val callback = object: ItemTouchHelper.SimpleCallback(
         return false
     }
     override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-        TODO("implementation")
+        TODO("implementation of action after swipe")
     }
 }
 val itemTouchHelper = ItemTouchHelper(callback)
