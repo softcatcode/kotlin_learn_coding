@@ -40,6 +40,11 @@ android:name="androidx.navigation.fragment.NavHostFragment"
 findNavController().navigate(R.id.action_introFragment_to_gameFragment); // without args
 findNavController().navigate(IntroFragmentDirections.actionIntroFragmentToGameFragment(args)) // with args
 ```
-___args___ - спислк аргументов (через ,).<br>
-Чтобы завершить работу фрагмента, нужно настроить это событие в main_navigation.xml (указать, куда переходить)<br>
+___args___ - список аргументов (через ,).<br>
+Чтобы настроить завершение работы фрагмента, нужно настроить это событие в main_navigation.xml (указать, куда переходить)<br>
 и вызвать метод ```findNavController().popBackStack()```.
+
+# Иницилизация аргументов
+```Kotlin
+private val args by navArgs<GameFragmentArgs>()
+```
