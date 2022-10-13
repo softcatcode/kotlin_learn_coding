@@ -46,5 +46,6 @@ ___args___ - список аргументов (через ,).<br>
 
 # Иницилизация аргументов
 ```Kotlin
-private val args by navArgs<GameFragmentArgs>()
+private val args by navArgs<MyFragmentArgs>()
 ```
+Класс _MyFragment_ сгенерируется автоматически.
