@@ -7,7 +7,7 @@ plugins {
 
 Затем нужно расширить класс от _Parcelable_:
 ```Kotlin
- @Parcelize
+@Parcelize
 enum class Level: Parcelable {
     TEST, EASY, NORMAL, HARD
 }
